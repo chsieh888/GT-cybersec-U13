@@ -75,7 +75,7 @@ The playbook implements the following tasks:
 - Install Python3-pip
 - Install Docker using pip
 - Install ELK
-- Enable Docker sevices
+- Enable Docker services
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
