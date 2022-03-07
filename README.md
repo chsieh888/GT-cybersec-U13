@@ -112,11 +112,11 @@ SSH into the control node and follow the steps below:
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
-'docker-container start'
-'docker-container attach [insert-container-name]'
-'apt-get update'
-'apt-get install curl'
-'ansible-playbook install-elk.yml'
-'ansible-playbook filebeat-playbook.yml'
-'ansible-playbook metricbeat-playbook.yml'
+- 'docker-container start'
+- 'docker-container attach [insert-container-name]'
+- 'apt-get update'
+- 'apt-get install curl'
+- 'ansible-playbook install-elk.yml'
+- 'ansible-playbook filebeat-playbook.yml'
+- 'ansible-playbook metricbeat-playbook.yml'
 
