@@ -1,7 +1,3 @@
-# GTcyber-portfolio
-portfolio of GT cybersecurity projects
-
-
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
@@ -11,6 +7,9 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
 
   - ![installELK](Ansible/install-elk.yml "installELK")
+  - ![DVWA](Ansible/pentest.yml "DVWA")
+  - ![filebeat](Ansible/filebeat-playbook.yml "filebeat")
+  - ![metricbeat](Ansible/metricbeat-playbook.yml "metricbeat")
 
 This document contains the following details:
 - Description of the Topology
@@ -38,10 +37,10 @@ The configuration details of each machine may be found below.
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| Web-1    | Gateway  | 10.0.0.5   | Linux            |
-| Web-2    | Gateway  | 10.0.0.6   | Linux            |
-| Web-3    | Gateway  | 10.0.0.7   | Linux            |
-| elk-vm   | Gateway  | 10.1.0.4   | Linux            |
+| Web-1    | Web Server  | 10.0.0.5   | Linux            |
+| Web-2    | Web Server  | 10.0.0.6   | Linux            |
+| Web-3    | Web Server  | 10.0.0.7   | Linux            |
+| elk-vm   | ELK Stack  | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
@@ -52,7 +51,7 @@ Only the JumpBox machine can accept connections from the Internet. Access to thi
 
 Machines within the network can only be accessed by JumpBox-VM via SSH.
 -  Which machine did you allow to access your ELK VM? JumpBox-Provisioner-VM
--  What was its IP address? 20.124.218.159
+-  What was its IP address? public IP: 20.124.218.159, Private IP: 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
